@@ -1,15 +1,185 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Whimsy PMC</title>
-  </head>
-
-  <body>
-    <h1>Whimsy PMC</h1>
-    <p>Placeholder for future content</p>
-
-    <p><small>Source: <a href="http://git-wip-us.apache.org/repos/asf/whimsy-whimsical-site.git">http://git-wip-us.apache.org/repos/asf/whimsy-whimsical-site.git</a></small></p>
-  </body>
+<head>
+  <meta charset="utf-8"/>
+  <title>Apache Whimsy Project Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+  <!-- Use bootstrap/jquery copies from apache.org homepage for 
+  consistency, and to set off whimsical.a.o from whimsy.a.o 
+  -->
+</head>
+<body>
+  <div class="header container-fluid">
+    <div class="row">
+      <div class="col-sm-4">
+        <a href="https://www.apache.org/">
+          <img title="ASF Logo" alt="ASF Logo" width="250" height="101" style="margin-left: 10px; margin-top: 10px;" src="https://www.apache.org/foundation/press/kit/asf_logo_small.png"/>
+        </a>
+      </div>
+      <div class="col-sm-8 align-bottom">
+        <ul class="nav nav-tabs">
+          <li role="presentation">
+            <a href="https://github.com/apache/whimsy/">
+              Code
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="https://lists.apache.org/list.html?dev@whimsical.apache.org">
+              Questions
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="https://whimsy.apache.org/">
+              Live Whimsy
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Apache <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://www.apache.org/foundation/governance/">The Apache Way</a></li>
+              <li><a href="https://community.apache.org/">How To Participate</a></li>
+              <li><a href="https://www.apache.org/foundation/contributing.html">Support Apache</a></li>
+              <li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="content container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <a href="https://whimsy.apache.org/">
+          <img title="Whimsy logo" alt="Whimsy hat" src="https://whimsy.apache.org/whimsy.svg" width="145" height="101"/>
+        </a>
+      </div>
+      <div class="col-md-9">
+        <header>
+          <h2><a href="http://dictionary.reference.com/browse/whimsy">Whim<span>·</span>sy</a></h2>
+          <aside>
+            [hwim-zee, wim-] noun, plural whim·sies.
+            <ol>
+              <li>capricious humor or disposition; extravagant, fanciful, or excessively playful expression: a play with lots of whimsy.</li>
+              <li>an odd or fanciful notion.</li>
+              <li>anything odd or fanciful; a product of playful or capricious fancy: a whimsy from an otherwise thoughtful writer.</li>
+            </ol>
+          </aside>
+        </header>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <p>The Apache Whimsy project volunteers create a number of individual
+          Apache Whimsy tools that display and visualize various bits 
+          of data related to ASF organizations and processes.  The 
+          <a href="https://whimsy.apache.org/">production Whimsy server</a> also has a number of tools that 
+          automate some organizational processes, like adding PMC 
+          members to official corporate rosters or reading, updating, 
+          and approving the monthly board agenda.
+        </p>
+        <p>Whimsy is different than most other Apache projects in that 
+          the tools we build are customized and integrated directly 
+          into many of the corporate operations of the ASF.  All of our 
+          code is Apache licensed and free, however some of the live 
+          tools run against private ASF data, so running some parts 
+          of Whimsy is only available to Committers, Members, or Officers. 
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">Documentation / How To</h3>
+          </div>
+          <div class="panel-body">
+            <li><a href="https://github.com/apache/whimsy/blob/master/DEVELOPMENT.md">How To Develop Whimsy Code</a></li>
+            <li><a href="https://lists.apache.org/list.html?dev@whimsical.apache.org">Ask Questions on dev@whimsical</a></li>
+            <li><a href="https://issues.apache.org/jira/browse/WHIMSY">Submit Bugs in JIRA</a></li>
+            <li><a href="https://github.com/apache/whimsy/blob/master/DEPLOYMENT.md">Deployment Instructions</a></li>
+            <li><a href="https://github.com/apache/whimsy/blob/master/CONFIGURE.md">Configuration Pointers</a></li>
+            <li><a href="https://github.com/apache/whimsy/blob/master/www/status/README.md">Monitoring How To</a> - <a href="https://whimsy.apache.org/status/">Live Whimsy Status</a></li>
+            <li><a href="https://github.com/apache/whimsy/blob/master/MACOSX.md">How To Setup on Mac OSX</a></li>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">Get Whimsy Code</h3>
+          </div>
+          <div class="panel-body">
+            <ul>
+              <li><a href="https://github.com/apache/whimsy/">Apache Whimsy Source Code</a></li>
+              <li><a href="http://git-wip-us.apache.org/repos/asf/whimsy-whimsical-site.git">Source for this whimsical website</a></li>
+              <li><a href="https://whimsy.apache.org/technology/">Dependencies and Server details</a></li>
+              <li><a href="https://github.com/apache/whimsy/blob/master/SOFTWARE.md">Dependency Setup</a></li>
+              <li><a href="https://github.com/apache/whimsy/blob/master/TODOS.md">Todos / Planned Work</a></li>
+              <li><del>Download Whimsy</del> - no formal software releases have been made yet; see the source.</li>             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Who We Are</h3>
+          </div>
+          <div class="panel-body">
+            The best way to see who works on Whimsy is
+            the <a href="https://whimsy.apache.org/roster/committee/whimsy">Whimsy roster tool</a>!
+            <br/>
+            You can also see <a href="https://github.com/apache/whimsy/graphs/contributors">Whimsy contributors on GitHub</a>.
+            <br/>
+            Most of the work done in Whimsy is in Ruby, JavaScript, React, and Wunderbar.
+            <br/>
+            Server uptime and maintenance is performed by the Whimsy PMC, <b>not</b> by the crack Apache Infra team.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">       
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Volunteers Wanted</h3>
+          </div>
+          <div class="panel-body">
+            The Whimsy project is always looking for new contributors.  Since most of our 
+            tools are focused on Apache project and corporate operations, it helps to 
+            be a committer on some Apache project.  
+            <br/>
+            Whimsy is a place where non-critical tools can be deployed, in an environment
+            where the tool has access to Apache LDAP authentication as well as a 
+            variety of internal Apache data sources.  It's also a place where many 
+            prototypes can be deployed quickly and easily, without affecting 
+            other Infra-SLA supported services.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <div class="footer container-fluid">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">License And Credits</h3>
+      </div>
+      <div class="panel-body">
+        <p>
+          Copyright &copy; 2015-2017 The Apache Software Foundation, Licensed under
+          the <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="license">Apache License, Version 2.0</a>.
+          <br />
+          Apache&reg;, the names of Apache projects, and the feather logo are either <a href="http://www.apache.org/foundation/marks/list/">registered trademarks or trademarks</a> of the Apache Software Foundation in the United States and/or other countries.
+        </p>  
+        <p><small>Source for this website: <a href="http://git-wip-us.apache.org/repos/asf/whimsy-whimsical-site.git">http://git-wip-us.apache.org/repos/asf/whimsy-whimsical-site.git</a></small></p>
+      </div>
+    </div>
+  </div>
+  <script src="jquery-2.1.1.min.js"></script>
+  <script src="bootstrap.js"></script>
+</body>
 </html>
-
+  
