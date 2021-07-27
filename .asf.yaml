@@ -1,0 +1,5 @@
+# See: https://cwiki.apache.org/confluence/display/INFRA/git+-+.asf.yaml+features
+
+publish:
+   profile: ~
+   whoami: asf-site
