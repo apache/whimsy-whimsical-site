@@ -1,5 +1,4 @@
 # See: https://github.com/apache/infrastructure-asfyaml/blob/main/README.md
 
 publish:
-   profile: ~
    whoami: asf-site
